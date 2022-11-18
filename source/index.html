@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/toys.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contactus.css">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+
+  <main class="main">
+
+      <section class="container">
+          <div class="banner banner-wrap">
+              <div class="banner__wr">
+                  <span>01</span>
+                  <ul class="handle">
+                      <li class="handle__item"></li>
+                      <li class="handle__item"></li>    
+                      <li class="handle__item"></li>     
+                      <li class="handle__item"></li>
+                  </ul>
+              </div>
+              <div class="banner__full">
+                  <h1 class="bunner-collection">THE OOH NOO COLLECTION</h1>
+                  <p class="designed-text">Designed in Slovenia</p>
+                  @@include('blocks/button.html', {
+                    "title": "EXPLORE NOW",
+                  })
+              </div>
+              <img class="banner__img" src="./img/monster.png" alt="monster" width="636" height="461">
+          </div>
+          <p class="banner-title">FREE(CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</p>
+      </section>
+      <section class="catalog-pro">
+          <div class="container">
+              <h2 class="catalog-title">CATEGORY PRODUCTS</h2>
+              <ul class="catalog-products">
+                  <li class="catalog-kids"><img class="catalog-kids-img" src="./img/kids.jpg" alt="kids" width="280" height="270">  
+                      <a href="#" class="kids-text">APPAREL KIDS</a></li>
+                  <li class="catalog-shop"><img class="catalog-shop-img" src="./img/holiday.png" alt="HOLIDAY SHOP" width="208" height="244">
+                      <a href="#" class="shop-text">HOLIDAY SHOP</a></li>
+                  <li class="catalog-toys"><img class="catalog-toys-img" src="./img/toys.png" alt="toys" width="270" height="270">
+                      <a href="toys.html" class="toys-text">TOYS</a></li>
+                  <li class="catalog-accessories"><img class="catalog-accessories-img" src="./img/accessories.png" alt="accessories" width="240" height="250">
+                      <a href="#" class="accessories-text">ACCESSORIES</a></li>
+              </ul>
+              <div class="catalog-slider">
+                  <div class="container">
+                      <div class="arrows">
+                          <button class="button-slider-left"></button>
+                          <img class="slider-left" src="./img/left.svg" alt="left" width="37" height="37">
+                          <button class="button-slider-right"></button>
+                          <img class="slider-right" src="./img/right.svg" alt="right" width="37" height="37">
+                          <p class="slider-text">Modern finds for the modern home. Curated goods by unique designers around
+                              the world from fashion to furniture for kids and adults.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="delivery">
+          <div class="container">
+              <div class="delivery__info">
+                  <img class="delivey-img" src="./img/women.png" alt="women" width="480" height="559">
+          <div class="delivery__more">
+              <h2 class="delivery__text">Delivery</h2>
+              <div class="delivery__list">
+                  <ul>
+                      <li class="delivery__list__item-del delivery__style">Delivery</li>
+                      <li class="delivery__list__item-gua">Guarantee</li>
+                      <li class="delivery__list__item-cre">Credit</li>
+                  </ul>
+              </div>
+              <p class="delivery__title">Some days i feel like i've been working on dlk my entire life 
+                  and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p><p class="delivery__title-second">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become 
+                      a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                      @@include('blocks/button.html', {
+                        "title": "LEARN MORE",
+                      })
+          </div>
+              </div>
+          </div>
+      </section>
+
+      <div class="brands">
+              <div class="container">
+                  <ul class="brands__flex">
+                      <li><img class="mail" src="./img/mail.png" alt="mail" width="193" height="60"></li>
+                      <li><img class="apple" src="./img/apple.png" alt="apple" width="179" height="61"></li>
+                      <li><img class="eltex" src="./img/eltex.png" alt="eltex" width="216" height="46"></li>
+                      <li><img class="owox" src="./img/owox.png" alt="owox" width="211" height="40"></li>
+                  </ul>
+                  </div>
+                  </div>
+
+      <section class="info">
+          <div class="container">
+              <div class="information">
+                  <div class="information__design">
+                      <h3 class="info__text">DESIGN LIFE KIDS</h3>
+                      <p class="info__design">About Us</p>
+                      <p class="info__title">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  
+                      </p>
+                      @@include('blocks/button.html', {
+                        "title": "BUY NOW",
+                      })
+                  </div>
+              <div class="info__contacts">
+                  <h3 class="contact-text">Contacts</h3>
+                      <div class="contacts-more">
+                          <p class="contacts-title">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                              <div class="map">
+                                 <div id="map-element" class="map__element">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195826!2d49.2880382517228!3d53.512214679916035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1665376044203!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+
+  </main>
+  @@include('blocks/footer.html')
+  <div class="section-form"> 
+      <div class="container-form">
+       <div class="popup-form"> 
+        <form action="#" method="post">
+         <div class="name">
+          <label class="name-style" for="name">Name</label>
+          <input class="input-name" type="text" id="name" name="user-name">
+         </div>
+         <div class="tel-email">
+          <div class="tel">
+           <label class="label-tel" for="phone">Phone</label>
+           <input class="input-tel" type="tel" id="phone" name="user-phone">
+          </div>
+          <div class="email">
+           <label class="label-email" for="email">Email</label>
+           <input class="input-email" type="email" id="email" name="user-email">
+          </div>
+         </div>
+         <div class="mess">
+          <label class="label-mess" for="message">Message</label>
+          <textarea class="textarea-mess" id="message" name="user-message"></textarea> 
+         </div>
+         @@include('blocks/checkbox.html')
+        </form>
+       </div>
+       <button class="button-close" type="button"></button>
+      </div>
+  </div>
+  <script src="./js/script.js"></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

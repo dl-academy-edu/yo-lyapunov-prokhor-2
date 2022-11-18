@@ -1,0 +1,36 @@
+/**************************************************** связывание чекбокс+баттон */
+.input-check ~ .button-form {
+    display: none;
+   }
+   
+   .input-check:checked ~ .button-disabled  {
+    display: none;
+   }
+   
+   .input-check:checked ~ .button-form {
+    display: block;
+    margin-top: 20px;
+   }
+  
+   .button-disabled {
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border: none;
+    background: #C1C1C1;
+    text-align: center;
+    font-weight: 700;
+    padding: 9px 22px;
+    cursor: pointer;
+    margin-top: 20px;
+   }
+  
+   .colouring-item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+   }

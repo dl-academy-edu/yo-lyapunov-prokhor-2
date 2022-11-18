@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="category">
+            <div class="container">
+                <h1 class="category__title">CATEGORY PRODUCTS</h1>
+                    <ul class="category__home">
+                        <li><a class="category__home-item" href="../index.html">Home</a></li>
+                        <li><img class="arrow-home" src="../img/arrowblack.svg" alt="arrow"></li>
+                        <li class="category__home-it">Catalog</li>
+                    </ul>                
+            </div>
+        </section>
+
+        <div class="catalog">
+            <div class="container">
+                <ul class="catalog__product">
+                    <li class="catalog__kid"><img class="catalog__kids__img" src="../img/kids.jpg" alt="kids" width="280" height="270">  
+                        <a href="#" class="kid-text">APPAREL KIDS</a></li>
+                    <li class="catalog__sh"><img class="catalog__shop__img" src="../img/holiday.png" alt="HOLIDAY SHOP" width="208" height="244">
+                        <a href="#" class="sh-text">HOLIDAY SHOP</a></li>
+                    <li class="catalog__toy"><img class="catalog__toys__img" src="../img/toys.png" alt="toys" width="280" height="270">
+                        <a href="#" class="toy-text">TOYS</a></li>
+                    <li class="catalog__access"><img class="catalog__accessories__img" src="../img/accessories.png" alt="accessories" width="240" height="250">
+                        <a href="#" class="access-text">ACCESSORIES</a></li>
+                        <li class="catalog__bird"><img class="catalog__bird__img" src="../img/bird.png" alt="bird" width="248" height="248">
+                        <a href="#" class="bird-text">SALE</a></li>
+                        <li class="catalog__rabbit"><img class="catalog__rabbit__img" src="../img/rabbit.png" alt="rabbit" width="271" height="204">
+                        <a href="#" class="rabbit-text">APPAREL ADULTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="product-description">
+            <div class="container">
+                <h2 class="product-title">Product Description</h2>
+                <p class="product-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="product-desc">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="product-slogan">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+            </div>
+        </section>
+       
+    </main>
+    @@include('blocks/footer.html')
+    
+</body>
+</html>

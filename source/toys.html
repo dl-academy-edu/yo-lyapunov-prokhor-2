@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/toys.css">
+    <title>Toys</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+<main>
+    <section class="toy">
+        <div class="container">
+            <h1 class="toy__title">Toy for kids</h1>
+                <ul class="toy__home">
+                    <li><a class="toy__home-item" href="../index.html">Home</a></li>
+                    <li><img class="arrow-home" src="../img/arrowblack.svg" alt="arrow"></li>
+                    <li><a class="toy__home-it" href="./catalog.html">Catalog</a></li>
+                    <li><img class="arrow-home" src="../img/arrowblack.svg" alt="arrow"></li>
+                    <li class="toy__home-ite">Toys</li>
+                </ul>                
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filters__navigations">
+                <div class="cost">
+                    <h2 class="filter-cost">Cost</h2>
+                    <input class="range-input" type="range" min="0" max="500" value="50" name="range" step="1">
+                    <div class="cost__items">
+                        <p class="cost__item">0</p>
+                        <p class="cost__item">500</p>
+                    </div>
+                </div>
+                <div class="colouring">
+                    <p class="colouring__text">Color</p>
+                    <input type="checkbox" id="black" name="color">
+                      <label class="colouring-item" for="black"><span class="checkmark">Black</span></label>
+                      <input type="checkbox" id="blue" name="color">
+                      <label class="colouring-item" for="blue"><span class="checkmark">Blue</span></label>
+                      <input type="checkbox" id="green" name="color">
+                      <label class="colouring-item" for="green"><span class="checkmark">Green</span></label>
+                      <input type="checkbox" id="white" name="color">
+                      <label class="colouring-item" for="white"><span class="checkmark">White</span></label>
+                    </div>
+                       <div class="filters__delivery">
+                        <p class="filters__text">Delivery</p>
+                        <div class="radio">
+                            <input class="radio__input" name="free" type="radio" id="radio_1">
+                            <label class="radio__label" for="radio_1"><span class="checkmark-radio">Free shipping</span></label>
+                        </div> 
+                        <div class="radio">
+                            <input class="radio__input" name="free" type="radio" id="radio_2">
+                            <label class="radio__label" for="radio_2"><span class="checkmark-radio">Fast shipping</span></label>
+                        </div> 
+                       </div>
+                       <div class="amount-group">
+                        <p class="amount-title">Amount</p>
+                            <div class="amount-group-item">
+                                <input id="radio__one" type="radio" name="radio" value="1" checked>
+                                <label for="radio__one"><span class="amoun-number">0-5</span></label>
+                            </div>
+                            <div class="amount-group-item">
+                                <input id="radio__two" type="radio" name="radio" value="2">
+                                <label for="radio__two"><span class="amoun-number">10-20</span></label>
+                            </div>
+                            <div class="amount-group-item">
+                                <input id="radio__three" type="radio" name="radio" value="3">
+                                <label for="radio__three"><span class="amoun-number">20-50</span></label>
+                        </div>
+                       </div>
+                       <button type="submit" class="button amount-button amount-button--style">Apply</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__wrap">
+                <div class="catalog__shark">
+                    <img src="../img/shark.png" alt="shark" width="380" height="385">
+                    <a class="shark-learn" href="#">
+                        <div class="learn-more-shark">
+                            <p class="shark-text">LEARN MORE</p>
+                        </div>
+                    </a>
+                    <h3 class="catalog__name__shark">SHARKY BEAN BAG CHAIR COVER</h3>
+                    <p class="price-shark">$60.00 USD</p>
+                </div>
+                <div class="catalog__brass">
+                    <img src="../img/brass.png" alt="brass" width="380" height="385">
+                    <a class="brass-learn" href="#">
+                        <div class="learn-more-brass">
+                            <p class="brass-text">LEARN MORE</p>
+                        </div>
+                    </a>
+                    <p class="catalog__name__brass">BRASS DECO FRAMES</p>
+                    <p class="price-brass">$66.00 USD</p>
+                </div>
+            <div class="catalog__cibo">
+                <img src="../img/cibo.png" alt="cibo" width="380" height="385">
+                <a class="cibo-learn" href="#">
+                    <div class="learn-more-cibo">
+                        <p class="cibo-text">LEARN MORE</p>
+                    </div>
+                </a>
+                <p class="catalog__name__cibo">CIBO FULL APRON</p>
+                <p class="price-cibo">$60.00 USD</p>
+            </div>
+            <div class="catalog__machine">
+                <img src="../img/machine.png" alt="machine" width="380" height="385">
+                <a class="machine-learn" href="#"> 
+                    <div class="learn-more-machine">
+                        <p class="machine-text">LEARN MORE</p>
+                    </div>
+                </a>
+                <p class="catalog__name__machine">GATCHA GATCHA GUMBALL MACHINE</p>
+                <p class="price-machine">$56.00 USD</p>
+            </div>
+            <div class="catalog__candle">
+                <img src="../img/candle.png" alt="candle" width="380" height="385">
+                <a class="candle-learn" href="#">
+                    <div class="learn-more-candle">
+                        <p class="candle-text">LEARN MORE</p>
+                    </div>
+                </a>
+                <p class="catalog__name__candle">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                <p class="price-candle">$29.00 USD</p>
+            </div>
+            <div class="catalog__tangle">
+                <img src="../img/tangle.png" alt="tangle" width="380" height="382">
+                <a class="tangle-learn" href="#">
+                    <div class="learn-more-tangle">
+                        <p class="tangle-text">LEARN MORE</p>
+                    </div>
+                </a>
+                <p class="catalog__name__tangle">TANGLE SPINNING TEA LIGHT</p>
+                <p class="price-tangle">$56.00 USD</p>
+            </div>
+            </div>
+    </div>
+    </section>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider__wrapper">
+                <img class="slider__img__left" src="../img/arrowleftwhite.svg" alt="arrowleft">
+            <ul class="slider__list">
+                <li class="slider__list-item">1</li>
+                <li class="slider__list-item">2</li>
+                <li class="slider__list-item">3</li>
+                <li class="slider__list-item">4</li>    
+            </ul>
+            <img class="slider__img__rigth" src="../img/arrowrightwhite.svg" alt="arrowright">
+            </div>
+        </div>
+    </div>
+
+
+</main>
+@@include('blocks/footer.html')    
+</body>
+
+</html>

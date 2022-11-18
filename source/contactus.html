@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/toys.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+    <title>Contact US</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main>
+
+
+    <section class="contact-us">
+        <div class="container">
+            <h1 class="cont-title">Contact  Us</h1>
+                <ul class="cont-wrapper">
+                    <li><a class="cont-home-item" href="../index.html">Home</a></li>
+                    <li><img class="arrow-home" src="../img/arrowblack.svg" alt=""></li>
+                    <li><a class="cont-home-it" href="#">Contact us</a></li>
+                </ul>                
+        </div>
+    </section>
+
+    <div class="contactus-form"> 
+        <div class="container-contactus">
+         <div class="popup-contactus"> 
+          <form action="#" method="post">
+           <div class="name">
+            <label class="name-style" for="name">Name</label>
+            <input class="input-name" type="text" id="name" name="user-name">
+           </div>
+           <div class="tel-email">
+            <div class="tel">
+             <label class="label-tel" for="phone">Phone</label>
+             <input class="input-tel" type="tel" id="phone" name="user-phone">
+            </div>
+            <div class="email">
+             <label class="label-email" for="email">Email</label>
+             <input class="input-email" type="email" id="email" name="user-email">
+            </div>
+           </div>
+           <div class="mess">
+            <label class="label-mess" for="message">Message</label>
+            <textarea class="textarea-mess" id="message" name="user-message"></textarea> 
+           </div>
+           @@include('blocks/checkbox.html')
+          </form>
+         </div>
+         <button class="button-close" type="button"></button>
+        </div>
+        <div class="help-you">
+            <p class="help-text-small-item">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p class="help-text-small">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p class="help-text-huge">An expert is waiting to help you!</p>
+        </div>
+    </div>
+
+    </main>
+    @@include('blocks/footer.html')
+</body>
+
+
+</html>

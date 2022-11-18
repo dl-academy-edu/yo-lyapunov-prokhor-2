@@ -28,4 +28,3 @@ source страничка будет автоматически перезагр
 Про editorconfig и настройку редактора советуем посмотреть ролик – https://www.youtube.com/watch?v=wWbDC1C7JEE
 
 - Проверяются стили на общепринятые правила [stylelint](https://stylelint.io/)
-1111
