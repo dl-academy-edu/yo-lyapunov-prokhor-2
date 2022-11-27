@@ -1,0 +1,112 @@
+
+.page__animation {
+    &-main {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #1E0606;
+        width: 360px;
+        height: 44px;
+        margin-top: 61px;
+        margin-bottom: 8px;
+        margin-left: 110px;
+    }
+    &-text {
+        display: flex;
+        align-items: center;
+        margin-left: 110px;
+    }
+    &-item {
+        font-family: "Crimson Text";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+        margin-right: 20px;
+    }
+    &-arrow {
+        margin-right: 20px;
+    }
+    &-item:hover {
+        opacity: 0.4;
+    }
+    &-item:active {
+        opacity: 0.5;
+    }
+    &-city {
+        position: relative;
+    }
+    &-carone {
+        position: absolute;
+        left: 13%;
+        top: 110%;
+    }
+    &-cartwo {
+        position: absolute;
+        left: 33%;
+        top: 110%;
+    }
+    &-carthree {
+        position: absolute;
+        left: 48%;
+        top: 112%;
+    }
+    &-carfour {
+        position: absolute;
+        left: 73.2%;
+        top: 106%;
+    }
+    &-lampone {
+        position: absolute;
+        left: 38.2%;
+        top: 66%; 
+    }
+    &-lamptwo {
+        position: absolute;
+        left: 78.8%;
+        top: 66%;
+    }
+    &-lampactive {
+        position: absolute;
+        left: 78.8%;
+        top: 56%;
+        z-index: 2;
+    }
+    &-taxi {
+        position: absolute;
+        right: -100px;
+        top: 56%;
+        z-index: 1;
+    }
+    &-woman {
+        position: absolute;
+        left: 22.8%;
+        top: 114%;
+        width: 211px;
+        height: 283px;
+        z-index: 2;
+    }
+    &-men {
+        position: absolute;
+        left: 29.8%;
+        top: 95%;
+        z-index: 1;
+    }
+    
+}
+
+.page__animation-clouds {
+
+}
+
+.container__width {
+    width: 1400px;
+}
+
+@keyframes page__animation {
+
+}

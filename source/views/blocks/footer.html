@@ -1,9 +1,9 @@
 <footer class="footer">
   <div class="container">
       <div class="footer__aside">
-          <div class="navigation">
-              <p class="navigation__text">Navigation</p>
-              <div class="navigation__line"></div>
+          <div class="footer__navigation">
+              <p class="footer__text">Navigation</p>
+              <div class="footer__line"></div>
                   <ul class="footer__info">
                       <li class="footer__info-item">About Us</li>
                       <li class="footer__info-item">Blog</li>
@@ -13,10 +13,10 @@
                       <li class="footer__info-item">Shop By Designer</li>
                   </ul>
           </div>
-          <div class="customer">
-              <div class="customer__text">Customer Information</div>
-              <div class="customer__line"></div>
-                  <ul class="footer__customer">
+          <div class="footer__customer">
+              <div class="footer__customer-text">Customer Information</div>
+              <div class="footer__customer-line"></div>
+                  <ul class="footer__customer-it">
                       <li class="footer__customer-item">Contact Us</li>
                       <li class="footer__customer-item">Sale Exclusions</li>
                       <li class="footer__customer-item">Shipping & Returns</li>
@@ -25,14 +25,18 @@
                       <li class="footer__customer-item">Search</li>
                   </ul>
           </div>
-          <div class="connect-footer">
+          <div class="footer__connect">
               <form action="#" method="POST" class="form-elements"></form>
-                  <div class="connect">
-                      <div class="connect__text">Connect</div>
-                      <div class="connect__line"></div>
+                  <div class="footer__connect-wrap">
+                      <div class="footer__connect-text">Connect</div>
+                      <div class="footer__connect-line"></div>
                       <div class="footer__mail">
                           <input class="footer__input" type="text" placeholder="Email">
-                          <button class="footer__button">Join</button>
+                          @@include('blocks/button.html', {
+                            "button-text": "Join",
+                            "class": "footer__button",
+                          })
+                          <!-- <button class="footer__button">Join</button> -->
                       </div>
                           <ul class="footer__links">
                               <li class="footer__img-item"><img src="./img/facebook.svg" alt="facebook" width="30" height="30"></li>
@@ -43,12 +47,12 @@
                       </div>
                   </div>
           </div>
-          <div class="line-footer"></div>
+          <div class="footer__line-big"></div>
           <div class="footer__box">
-              <div class="company">
-                  <p class="company__text">Company Rating</p>
-                  <div class="rating-mini">
-                      <div class="rating-area">
+              <div class="footer__company">
+                  <p class="footer__company-text">Company Rating</p>
+                  <div class="footer__rating-mini">
+                      <div class="footer__rating-area">
                        <input type="radio" id="star-5" name="rating" value="5">
                        <label class="label-rating" for="star-5" title="Супер"></label> 
                        <input type="radio" id="star-4" name="rating" value="4">
@@ -63,7 +67,7 @@
                      </div>
                     </div>                                          
               <div class="footer__info-text">Copyright © 2018 Dlk • Design Life Kids</div>
-              <div class="footer__web__text">Web Design — Direct Line Development</div>
+              <div class="footer__web-text">Web Design — Direct Line Development</div>
           </div>
       </div>
 </footer>

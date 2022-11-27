@@ -10,7 +10,7 @@
 
 const popup = document.querySelector('.section-form');
 const buttonOpen = document.querySelector('.button-btn-js');
-const buttonClose = document.querySelector('.button-close');
+const buttonClose = document.querySelector('.button__close');
 const emailInput = document.getElementById('name');
 
 buttonOpen.addEventListener('click', function() {
@@ -27,6 +27,8 @@ window.addEventListener('keydown', function(event) {
         popup.classList.remove('open');
     }
 })
+
+
 
 
 
