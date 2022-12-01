@@ -1,0 +1,265 @@
+.pages__svg {
+    &-main {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #1E0606;
+        width: 360px;
+        height: 44px;
+        margin-top: 61px;
+        margin-bottom: 8px;
+        margin-left: 110px;
+    }
+    &-text {
+        display: flex;
+        align-items: center;
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
+    &-item {
+        font-family: "Crimson Text";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+        margin-right: 20px;
+    }
+    &-arrow {
+        margin-right: 20px;
+    }
+    &-item:hover {
+        opacity: 0.4;
+    }
+    &-item:active {
+        opacity: 0.5;
+    }
+
+}
+
+// картинки 
+.svg {
+    display: flex;
+    flex-direction: column;
+    margin-left: 338px;
+    margin-bottom: 60px;
+    overflow: hidden;
+
+    &__line {
+        animation: line 2s ease-in-out; 
+    }
+    &__rect {
+        animation: line-one 2s ease-in-out;    
+    }
+
+    &__rectone {
+        position: absolute;
+        left: 19.4%;
+        top: 31.1%;
+        animation: opacity 2s ease-in-out;  
+
+    }
+    &__lineblue {
+        position: absolute;
+        top: 33%;
+        left: 20%;
+        animation: line 1s ease-in-out;
+    }
+
+    &__linegreen {
+        position: absolute;
+        top: 36%;
+        left: 20.7%;
+        animation: line 1s ease-in-out;
+    }
+    &__linered-s {
+        position: absolute;
+        top: 39%;
+        left: 21.7%;
+        animation: line 1s ease-in-out;
+    }
+    &__linered-b {
+        position: absolute;
+        top: 39%;
+        left: 24.8%;
+        animation: line 1s ease-in-out;
+    }
+    &__lineyellow {
+        position: absolute;
+        top: 42%;
+        left: 22.8%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray {
+        position: absolute;
+        top: 44.8%;
+        left: 22.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-a {
+        position: absolute;
+        top: 47.5%;
+        left: 22.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-b {
+        position: absolute;
+        top: 47.5%;
+        left: 25.1%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-s {
+        position: absolute;
+        top: 50%;
+        left: 22.6%;
+        animation: line 2s ease-in-out;
+    }
+    &__lineyellow-a {
+        position: absolute;
+        top: 53%;
+        left: 22.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linered-d {
+        position: absolute;
+        top: 56%;
+        left: 22%; 
+        animation: line 2s ease-in-out;
+    }
+    &__linegreen-two {
+        position: absolute;
+        top: 58.5%;
+        left: 21%; 
+        animation: line 2s ease-in-out;
+    }
+    &__lineblue-two {
+        position: absolute;
+        top: 61%;
+        left: 20.2%;  
+        animation: line 2s ease-in-out;
+    }
+    &__linebeckground {
+        position: absolute;
+        left: 29.5%;
+        top: 31.1%;
+        animation: opacity 2s ease-in-out;  
+    }
+    &__backblue {
+        position: absolute;
+        left: 29.5%;
+        top: 33.1%;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__rock {
+        position: absolute;
+        left: 32%;
+        top: 37.9%; 
+        z-index: 1;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__roc-t {
+        position: absolute;
+        left: 30%;
+        top: 39.9%; 
+        z-index: 0;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__backblue-t {
+        position: absolute;
+        left: 30.5%;
+        top: 48.1%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__rock-s {
+        position: absolute;
+        left: 32.5%;
+        top: 52.9%; 
+        animation: line-one 2s ease-in-out; 
+    }
+    &__rock-j {
+        position: absolute;
+        left: 34.5%;
+        top: 51.6%;  
+        animation: line-one 2s ease-in-out; 
+    }
+    &__sun {
+        position: absolute;
+        left: 31.5%;
+        top: 49.6%;  
+        animation: line-one 2s ease-in-out; 
+    }
+    &__lineend-one {
+        position: absolute;
+        left: 30.5%;
+        top: 58.6%;  
+        animation: line-one 2s ease-in-out; 
+    }
+    &__lineend-two {
+        position: absolute;
+        left: 30.5%;
+        top: 61%;  
+        animation: line-one 2s ease-in-out; 
+    }
+    }
+    
+    @keyframes line {
+        0% {
+          left: 1px;
+          opacity: 0.3;  
+        }
+        30% {
+            opacity: 0.2; 
+          }
+        50% {
+            opacity: 0.4; 
+        }
+        70% {
+            opacity: 0.7; 
+        }
+        100% {
+            opacity: 1; 
+        }
+    }
+
+    @keyframes line-one {
+        0% {
+            top: 1px;
+            opacity: 0.3;  
+          }
+          30% {
+              opacity: 0.2; 
+            }
+          50% {
+              opacity: 0.4; 
+          }
+          70% {
+              opacity: 0.7; 
+          }
+          100% {
+              opacity: 1; 
+          }
+      }
+
+      @keyframes opacity {
+        0% {
+            opacity: 0.2;  
+          }
+          30% {
+              opacity: 0.3; 
+            }
+          50% {
+              opacity: 0.4; 
+          }
+          70% {
+              opacity: 0.7; 
+          }
+          100% {
+              opacity: 1; 
+          }
+      }
+
+      
+    
