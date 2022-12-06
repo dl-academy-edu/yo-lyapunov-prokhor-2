@@ -1,9 +1,14 @@
 .catalog__slider {
     display: flex;
     flex-direction: row;
+    @media (max-width:768px) {
+      left: 0;
+  }
     &-arrows {
       display: flex;
       margin-top: 30px;
+      @media (max-width:768px) {
+    }
     }
     &-left {
       display: flex;

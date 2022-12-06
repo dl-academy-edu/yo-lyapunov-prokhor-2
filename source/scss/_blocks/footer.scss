@@ -5,6 +5,9 @@
   background: #434343;
   height: 555px;
   margin: 0 auto;
+  @media (max-width:768px) {
+    width: 968px;
+  }
   &__aside {
     display: flex;
   }
