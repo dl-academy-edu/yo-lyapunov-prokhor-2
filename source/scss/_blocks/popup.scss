@@ -20,13 +20,20 @@
  }
 
  .popup__form {
-  // position: absolute;
-  // top: 23%;
-  // left: 31.6%;
   background-color: #7D97DA;
   width: 680px;
   padding: 40px 42px;
   background: #E5EAF8;
+  @media (max-width:768px) {
+   margin-left: -429px;
+   margin-top: -28px;
+   }
+   @media (max-width:375px) {
+   width: 335px;
+   padding: 25px;
+   margin-left: -615px;
+}
+
   &-namestyle {
    font-family: $font-roboto;
    font-style: normal;
@@ -39,6 +46,9 @@
    width: 600px;
    height: 50px;
    margin-bottom: 5px;
+   @media (max-width:375px) {
+      width: 285px;
+   }
   }
   &-inputname:hover {
    border: 1px solid #C29974;
@@ -46,6 +56,9 @@
   &-telemail {
    display: flex;
    justify-content: space-between;
+   @media (max-width:375px) {
+      flex-direction: column;
+   }
   }
   &-tel {
    margin-right: 10px;
@@ -75,10 +88,16 @@
    font-size: 14px;
    line-height: 16px;
    color: #1E0606;
+   @media (max-width:375px) {
+      margin-left: -10px;
+   }
   }
   &-inputemail {
    width: 290px;
    height: 50px;
+   @media (max-width:375px) {
+      margin-left: -10px;
+   }
   }
   &-inputemail:hover {
    border: 1px solid #C29974;
@@ -103,6 +122,9 @@
    color: #1E0606;
    padding: 14px 0 11px 20px;
    margin-bottom: 20px;
+   @media (max-width:375px) {
+      width: 285px;
+   }
   }
   &-textarea:hover {
    border: 1px solid #C29974;

@@ -12,4 +12,7 @@
     padding: 9px;
     cursor: pointer;
     margin-left: 44px;
+    @media (max-width:375px) {
+      margin-left: -16px;
+    }
   }

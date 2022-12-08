@@ -5,11 +5,18 @@
   background: #434343;
   height: 555px;
   margin: 0 auto;
-  @media (max-width:768px) {
-    width: 968px;
+  @media (max-width:702px) {
+  height: 884px;
   }
   &__aside {
     display: flex;
+    @media (max-width:1187px) {
+      margin-left: 30px;
+    }
+    @media (max-width:702px) {
+      flex-direction: column;
+      margin-top: -32px;
+    }
   }
 
   &__navigation {
@@ -38,6 +45,13 @@
     width: 380px;
     height: 1px;
     background: #666666;
+    @media (max-width:1187px) {
+      width: 203px;
+    }
+    @media (max-width:702px) {
+      width: 325px;
+    }
+    
   }
   &__info {
     font-family: $font-opensans;
@@ -47,9 +61,28 @@
     line-height: 22px;
     margin-top: 28px;
     color: #FFFFFF;
+    @media (max-width:702px) {
+      columns: 2;
+      counter-reset: center;
+      padding-right: 329px;
+    }
   }
+//   &__info-item:nth-child(3) {
+//     @media (max-width:702px) {
+//       padding-top: 23px;
+//     }
+//   }
+//   &__info-item:nth-child(2) {
+//     @media (max-width:702px) {
+//       padding-top: 1px;
+//   }
+// }
+  
   &__info-item {
     padding-bottom: 15px;
+    @media (max-width:702px) {
+      width: 157px;
+    }
   }
   &__info-item:hover {
     opacity: 0.3;
@@ -70,6 +103,9 @@
     line-height: 22px;
     color: #AAAAAA;
     margin-bottom: 23px;
+    @media (max-width:702px) {
+      margin-top: -60px;
+    }
   }
 
   &__customer-line {
@@ -77,6 +113,12 @@
     height: 1px;
     background: #666666;
     margin-right: 20px;
+    @media (max-width:1187px) {
+      max-width: 203px;
+    }
+    @media (max-width:702px) {
+      max-width: 325px;
+    }
   }
 
   &__customer-it {
@@ -87,6 +129,11 @@
     line-height: 22px;
     margin-top: 28px;
     color: #FFFFFF;
+    @media (max-width:702px) {
+      columns: 2;
+      counter-reset: center;
+      padding-right: 329px;
+    }
   }
 
   &__customer-item {
@@ -120,6 +167,9 @@
     line-height: 22px;
     color: #AAAAAA;
     margin-bottom: 23px;
+    @media (max-width:702px) {
+      margin-top: -77px;
+    }
   }
   &__connect-text:hover {
     opacity: 0.3;
@@ -133,11 +183,20 @@
     height: 1px;
     background: #666666;
     margin-bottom: 25px;  
+    @media (max-width:1187px) {
+      width: 203px;
+    }
+    @media (max-width:702px) {
+      width: 325px;
+    }
   }
 
   &__mail {
     display: flex;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;  
+    @media (max-width:1187px) {
+      max-width: 50px;
+    }  
   }
 
   &__input {
@@ -152,6 +211,13 @@
     width: 299px;
     background: #666666;
     border-right: none;
+    @media (max-width:1187px) {
+      max-width: 150px;
+    }
+    @media (max-width:702px) {
+      max-width: 249px;
+      padding-right: 145px;
+    }
   }
   &__input::-webkit-input-placeholder {
     color: #EBEBEB; 
@@ -175,15 +241,35 @@
     background: #666666;
     margin-bottom: 23px;
     margin-top: 12px;
+    @media (max-width:1187px) {
+      max-width: 658px;
+      margin-left: 30px;
+    }
+    @media (max-width:702px) {
+      max-width: 325px;
+      margin-top: 40px;
+    }
   }
   &__box {
     display: flex;
+    @media (max-width:1187px) {
+      flex-direction: column;
+    }
+    @media (max-width:702px) {
+      flex-direction: column;
+    }
   }
+  // &__info-box {
+  //   display: flex;
+  // }
   &__company {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -3px;
+    @media (max-width:1187px) {
+      margin-left: -427px;
+    }
   }
   &__company-text {
     font-family: $font-opensans;
@@ -194,6 +280,10 @@
     margin-right: 25px;
     color: #FFFFFF;
     margin-top: 4px;
+    @media (max-width:1187px) {
+      margin-left: 30px;
+      max-width: 123px;
+    }
   }
   &__button {
     display: block;
@@ -208,6 +298,10 @@
     text-align: center;
     padding: 9px;
     cursor: pointer;
+    @media (max-width:702px) {
+      max-width: 60px;
+      padding-right: 44px;
+    }
   }
   &__button:hover {
     background: #C29974;
@@ -225,6 +319,13 @@
     margin-right: 109px;
     color: #FFFFFF;
     margin-left: 150px; 
+    @media (max-width:1187px) {
+      margin-left: 31px;
+      margin-top: 15px;
+    }
+    @media (max-width:702px) {
+      margin-left: 32px;
+    }
   }
   &__web-text {
     font-family: $font-opensans;
@@ -235,6 +336,14 @@
     color: #A2A2A2;
     margin-left: 2px;
     margin-top: 2px;
+    @media (max-width:1187px) {
+      margin-left: 371px;
+      margin-top: -22px;
+    }
+    @media (max-width:702px) {
+      margin-left: 33px;
+      margin-top: 10px;
+    }
   }
   &__web-text:hover {
     text-decoration: underline;

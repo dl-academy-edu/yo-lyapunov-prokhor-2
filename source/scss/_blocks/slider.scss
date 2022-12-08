@@ -2,12 +2,16 @@
     display: flex;
     flex-direction: row;
     @media (max-width:768px) {
-      left: 0;
+      margin-left: 20px;
   }
     &-arrows {
       display: flex;
       margin-top: 30px;
+      margin-left: -498px;
       @media (max-width:768px) {
+    }
+    @media (max-width:686px) {
+      margin-left: -587px;
     }
     }
     &-left {
@@ -51,5 +55,11 @@
       color: #1E0606;
       width: 580px;
       margin-left: 24px;
+      @media (max-width:768px) {
+        max-width: 595px;
+  }
+      @media (max-width:686px) {
+        max-width: 289px;
+  }
     }
   }

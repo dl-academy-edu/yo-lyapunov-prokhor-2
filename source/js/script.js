@@ -12,6 +12,8 @@ const popup = document.querySelector('.section-form');
 const buttonOpen = document.querySelector('.button-btn-js');
 const buttonClose = document.querySelector('.button__close');
 const emailInput = document.getElementById('name');
+// const menu = document.querySelector('.wrapper__menu');
+// const body = document.querySelector('.body');
 
 buttonOpen.addEventListener('click', function() {
     popup.classList.add('open');
@@ -27,6 +29,15 @@ window.addEventListener('keydown', function(event) {
         popup.classList.remove('open');
     }
 })
+// // бекграунд на всю страницу
+// menu.addEventListener('click', function() {
+//     body.classList.add('background-full');
+// })
+
+// menu.addEventListener('click', function() {
+//     body.classList.remove('background-full');
+// })
+
 
 
 

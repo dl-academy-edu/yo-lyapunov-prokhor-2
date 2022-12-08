@@ -31,13 +31,13 @@
   <body>
     @@include('blocks/header.html')
 
-  <main class="main">
+  <main>
 
       <section class="main-banner">
           <div class="container container-banner">
             <div class="banner banner-wrap">
                 <div class="banner__wr">
-                    <span>01</span>
+                    <span class="banner__wr-text">01</span>
                     <ul class="banner__handle">
                         <li class="banner__handle-item"></li>
                         <li class="banner__handle-item"></li>    
@@ -54,8 +54,16 @@
                     })
                     <!-- <button type="button" class="button-btn button-btn-js">EXPLORE NOW</button>  -->
                 </div>
-                <img class="banner__img" src="./img/monster.png" alt="monster" width="636" height="461">
+                <!-- <img class="banner__img" src="./img/monster.png" alt="monster" width="636" height="461"> -->
+                <picture>
+                  <source class="banner__img" srcset="./img/image/monster.png" type="image/png" max-width="636" max-height="461" media="(min-width:768px)"> 
+                  <source class="banner__img" srcset="./img/image/monster292x226.png" type="image/png" media="(min-width:376px)">
+                  <source class="banner__img" srcset="./img/image/monster385x286.png" type="image/png" media="(max-width:375px)">
+                  <img class="banner__img" src="./img/image/monster.png" alt="monster">
+                </picture>
             </div>
+          </div>
+          <div class="container">
             <p class="banner__title">FREE(CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</p>
           </div>
       </section>
@@ -88,7 +96,7 @@
       </section>
 
       <section class="delivery">
-          <div class="container">
+          <div class="container container-catalog">
               <div class="delivery__info">
                   <img class="delivery-img" src="./img/women.png" alt="women" width="480" height="559">
           <div class="delivery__more">
@@ -114,18 +122,51 @@
       </section>
 
       <div class="brands">
-              <div class="container">
+              <div class="container container-catalog">
                   <ul class="brands__flex">
-                      <li><img class="brands__flex-mail" src="./img/mail.png" alt="mail" width="193" height="60"></li>
-                      <li><img class="brands__flex-apple" src="./img/apple.png" alt="apple" width="179" height="61"></li>
-                      <li><img class="brands__flex-eltex" src="./img/eltex.png" alt="eltex" width="216" height="46"></li>
-                      <li><img class="brands__flex-owox" src="./img/owox.png" alt="owox" width="211" height="40"></li>
+                      <li class="brands__flex-mail"> 
+                        <!-- <img  src="./img/mail.png" alt="mail" width="193" height="60"> -->
+                        <picture> 
+                            <source srcset="./img/image/mail.png" type="image/png" max-width="193" max-height="60" media="(min-width:965px)"> 
+                            <source srcset="./img/image/mail106x33.png" type="image/png" media="(min-width:376px)">
+                            <source srcset="./img/image/mail131x42.png" type="image/png" media="(max-width:375px)">
+                            <img src="./img/image/mail.png" alt="mail">
+                          </picture>
+                    </li>
+        
+                      <li class="brands__flex-apple">
+                        <!-- <img class="brands__flex-apple" src="./img/apple.png" alt="apple" width="179" height="61"> -->
+                        <picture> 
+                        <source srcset="./img/image/apple.png" type="image/png" max-width="179" max-height="61" media="(min-width:965px)"> 
+                        <source srcset="./img/image/apple98x33.png" type="image/png"media="(min-width:375px)">
+                        <source srcset="./img/image/apple109x38.png" type="image/png" media="(max-width:374px)">
+                        <img src="./img/image/apple.png" alt="apple">
+                      </picture>
+                    </li>
+                      <li class="brands__flex-eltex">
+                        <!-- <img class="brands__flex-eltex" src="./img/eltex.png" alt="eltex" width="216" height="46"> -->
+                        <picture> 
+                        <source srcset="./img/image/eltex.png" type="image/png" max-width="216" max-height="46" media="(min-width:965px)"> 
+                        <source srcset="./img/image/eltex118x25.png" type="image/png"media="(min-width:375px)">
+                        <source srcset="./img/image/eltex149x32.png" type="image/png" media="(max-width:374px)">
+                        <img src="./img/image/eltex.png" alt="eltex">
+                      </picture>
+                    </li>
+                      <li class="brands__flex-owox">
+                        <!-- <img class="brands__flex-owox" src="./img/owox.png" alt="owox" width="211" height="40"> -->
+                        <picture> 
+                        <source srcset="./img/image/owox.png" type="image/png" max-width="211" max-height="40" media="(min-width:940px)"> 
+                        <source srcset="./img/image/owox116x22.png" type="image/png" media="(min-width:375px)">
+                        <source srcset="./img/image/owox143x26.png" type="image/png" media="(max-width:374px)">
+                        <img src="./img/image/owox.png" alt="owox">
+                      </picture>
+                    </li>
                   </ul>
                   </div>
                   </div>
 
       <section class="info">
-          <div class="container">
+          <div class="container container-catalog">
               <div class="info__wrap">
                   <div class="info__des">
                       <h3 class="info__text">DESIGN LIFE KIDS</h3>
