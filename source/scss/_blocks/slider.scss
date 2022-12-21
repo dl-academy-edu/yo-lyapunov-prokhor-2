@@ -6,12 +6,15 @@
   }
     &-arrows {
       display: flex;
-      margin-top: 30px;
-      margin-left: -498px;
+      margin-top: 15px;
       @media (max-width:768px) {
+        padding: 0 0 0 22px;
     }
+    @media (max-width: 1456px) {
+      // margin-left: 400px;
+  }
     @media (max-width:686px) {
-      margin-left: -587px;
+      // margin-left: -587px;
     }
     }
     &-left {
@@ -53,7 +56,7 @@
       font-size: 16px;
       line-height: 22px;
       color: #1E0606;
-      width: 580px;
+      max-width: 548px;
       margin-left: 24px;
       @media (max-width:768px) {
         max-width: 595px;
