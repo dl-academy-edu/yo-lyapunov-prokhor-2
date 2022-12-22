@@ -67,16 +67,16 @@
       padding-right: 329px;
     }
   }
-//   &__info-item:nth-child(3) {
-//     @media (max-width:702px) {
-//       padding-top: 23px;
-//     }
-//   }
-//   &__info-item:nth-child(2) {
-//     @media (max-width:702px) {
-//       padding-top: 1px;
-//   }
-// }
+  &__info-item:nth-child(3) {
+    @media (max-width:702px) {
+      padding-top: 23px;
+    }
+  }
+  &__info-item:nth-child(2) {
+    @media (max-width:702px) {
+      padding-top: 1px;
+  }
+}
   
   &__info-item {
     padding-bottom: 15px;
