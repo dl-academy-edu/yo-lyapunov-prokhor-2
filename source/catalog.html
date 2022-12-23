@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="category">
+            <div class="container container-catalog">
+                <h1 class="category__title">CATEGORY PRODUCTS</h1>
+                    <ul class="category__home">
+                        <li><a class="category__home-item" href="../index.html">Home</a></li>
+                        <li><img class="category__home-arrow" src="./img/arrowblack.svg" alt="arrow"></li>
+                        <li class="category__home-it">Catalog</li>
+                    </ul>                
+            </div>
+        </section>
+
+        <div class="catalog">
+            <div class="container">
+                <ul class="catalog__product">
+                    <li class="catalog__product-kid"><img class="catalog__product-kidimg" src="./img/kids.jpg" alt="shirt catalog" width="280" height="270">  
+                        <a href="#" class="catalog__product-text">APPAREL KIDS</a></li>
+                    <li class="catalog__product-sh"><img class="catalog__product-shimg" src="./img/holiday.png" alt="holiday sock catalog" width="208" height="244">
+                        <a href="#" class="catalog__product-shtext">HOLIDAY SHOP</a></li>
+                    <li class="catalog__product-toy"><img class="catalog__product-toyimg" src="./img/toys.png" alt="figurine catalog " width="280" height="270">
+                        <a href="toys.html" class="catalog__product-toytext">TOYS</a></li>
+                    <li class="catalog__product-access"><img class="catalog__product-accessimg" src="./img/accessories.png" alt="catalog of unusual socks" width="240" height="250">
+                        <a href="#" class="catalog__product-accesstext">ACCESSORIES</a></li>
+                        <li class="catalog__product-bird"><img class="catalog__product-birdimg" src="./img/bird.png" alt="swimming bird" width="248" height="248">
+                        <a href="#" class="catalog__product-birdtext">SALE</a></li>
+                        <li class="catalog__product-rabbit"><img class="catalog__product-rabbitimg" src="./img/rabbit.png" alt="women's shirts" width="271" height="204">
+                        <a href="#" class="catalog__product-rabbittext">APPAREL ADULTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="description">
+            <div class="container">
+                <h2 class="description__producttitle">Product Description</h2>
+                <p class="description__producttext">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="description__productdesc">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="description__productslogan">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+            </div>
+        </section>
+       
+    </main>
+    @@include('blocks/footer.html')
+    
+</body>
+</html>

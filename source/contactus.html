@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact US</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main>
+
+
+    <section class="contact">
+        <div class="container">
+            <h1 class="contact__title">Contact  Us</h1>
+                <ul class="contact__wrapper">
+                    <li><a class="contact__home-item" href="../index.html">Home</a></li>
+                    <li><img class="arrow-home" src="./img/arrowblack.svg" alt=""></li>
+                    <li><a class="contact__home-it" href="#">Contact us</a></li>
+                </ul>                
+        </div>
+    </section>
+
+
+    </main>
+    <section class="form__popups">
+        <div class="container container-all">
+            @@include('blocks/popup.html')
+            @@include('blocks/help.html')
+        </div>
+    </section>
+    @@include('blocks/footer.html')
+</body>
+
+
+</html>

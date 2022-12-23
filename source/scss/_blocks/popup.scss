@@ -1,0 +1,295 @@
+.section-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(125, 151, 218, 0.8);
+  height: 3000px;
+  width: 100%;
+  z-index: 100;
+ }
+
+ .container-form {
+  display: flex;
+  justify-content: center;
+ }
+ .form-block {
+  margin-top: 150px;
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  @media (max-width:768px) {
+   display: flex;
+   flex-direction: column;
+ }
+ }
+ .open {
+   display: block;
+ }
+
+ .popup__form {
+  background-color: #7D97DA;
+  padding: 40px 42px;
+  background: #E5EAF8;
+
+  &-namestyle {
+   font-family: $font-roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #1E0606;
+  }
+  &-inputname {
+   max-width: 600px;
+   width: 100%;
+   height: 50px;
+   margin-bottom: 5px;
+  }
+  &-inputname:hover {
+   border: 1px solid #C29974;
+  }
+  &-telemail {
+   display: flex;
+   justify-content: space-between;
+   @media (max-width:375px) {
+      flex-direction: column;
+    }
+  }
+  &-tel {
+   margin-right: 10px;
+  }
+  &-labeltel {
+   font-family: $font-roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #1E0606;
+  }
+  &-inputtel {
+   max-width: 290px;
+   width: 100%;
+   height: 50px;
+  }
+  &-inputtel:hover {
+   border: 1px solid #C29974;
+  }
+  &-email {
+   margin-left: 10px;
+   @media (max-width:375px) {
+      margin-left: 0;
+    }
+  }
+  &-labelemail {
+   font-family: $font-roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #1E0606;
+  }
+  &-inputemail {
+   max-width: 290px;
+   width: 100%;
+   height: 50px;
+  }
+  &-inputemail:hover {
+   border: 1px solid #C29974;
+  }
+  &-labelmess {
+   font-family: $font-roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #1E0606;
+   margin-top: 4px;
+  }
+
+  &-textarea {
+   height: 150px;
+   font-family: $font-opensans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   color: #1E0606;
+   padding: 14px 0 11px 20px;
+   margin-bottom: 20px;
+  }
+  &-textarea:hover {
+   border: 1px solid #C29974;
+  }
+  &-name, &-tel, &-email, &-mess {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   width: 100%;
+  }
+ }
+
+
+ label {
+  font-family: $font-opensans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  margin-bottom: 3px;
+ }
+ 
+ .label-check {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1E0606;
+ }
+ 
+
+ 
+
+
+
+/**************************************************** связывание чекбокс+баттон */
+ .input-check ~ .button-form {
+  display: none;
+ }
+ 
+ .input-check:checked ~ .button-disabled  {
+  display: none;
+ }
+ 
+ .input-check:checked ~ .button-form {
+  display: block;
+  margin-top: 20px;
+ }
+
+ .button-disabled {
+  color: #FFFFFF;
+  display: block;
+  font-family: $font-opensans;
+  text-transform: uppercase;
+  border: none;
+  background: #C1C1C1;
+  text-align: center;
+  font-weight: 700;
+  padding: 9px 22px;
+  cursor: pointer;
+  margin-top: 20px;
+ }
+
+ .colouring-item {
+  font-family: $font-opensans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+ }
+ .check {
+}
+
+
+.input-check {
+ margin-right: 15px;
+ border: 2px solid #C29974;
+ border-radius: 3px;
+}
+
+.label-check {
+ font-family: $font-opensans;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 19px;
+ color: #1E0606;
+}
+
+.button-form {
+ background: #000000;
+ display: block;
+ font-family: $font-opensans;
+ text-transform: uppercase;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ padding: 9px 22px;
+ font-weight: 700;
+ cursor: pointer;
+}
+
+ // К ПОПАПУ 
+
+input[type="checkbox"] {
+   display: none;
+}
+
+.colouring-item {
+   padding-left: 17px;
+   cursor: pointer;
+   margin-top: 11px;
+}
+
+.colouring-item:nth-of-type(1) {
+   padding-top: 2px;
+}
+
+.colouring-item::before {
+   content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background: #FFFFFF;
+   border: 2px solid #C29974;
+   border-radius: 3px;
+   vertical-align: middle;
+   margin-left: -18px;
+   margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + .colouring-item::before {
+   content: '';
+   text-align: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   background-image: url('../img/check.svg');
+   background-repeat: no-repeat;
+   background-size: 90%;
+   padding-left: 0.3px;
+}
+
+.checkmark {
+   font-family: $font-opensans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: #1E0606;
+}
+
+.checkmark:hover {
+   text-decoration: underline;
+}
+
+.checkmark:active {
+   text-decoration: underline;
+}
+
+.checkmark:disabled {
+   color: #908484;
+}
+
+.check {
+   margin-top: -18px;
+}

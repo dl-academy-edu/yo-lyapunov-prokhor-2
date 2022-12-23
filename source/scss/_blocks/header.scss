@@ -1,0 +1,293 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    // z-index: 0;
+    @media (max-width:768px) {
+        margin-left: -11px;
+    }
+    @media (max-width:375px) {
+       
+    }
+    &__list {
+        display: flex;
+        margin-right: auto;
+        font-family: $font-opensans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 58px;
+        margin-top: 29px;
+        @media (max-width:768px) {
+            display: none; 
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center; 
+        margin-top: 31px;
+        @media (max-width:768px) {
+            margin-right: -218px;
+        }  
+    }
+
+    &__text {
+        font-family: $font-opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        word-spacing: 2px;
+        margin-left: 21px;
+        @media (max-width:768px) {
+            display: none; 
+        }
+        // 
+    }
+
+    &__text:hover {
+        opacity: 0.3; 
+    }
+
+    &__text:active {
+        opacity: 0.2;
+    }
+
+    &__list-item {
+        margin-right: 21px;
+        align-items: center;
+    }
+    &__list-item:hover {
+        opacity: 0.3;
+    }
+    &__list-item:active {
+        opacity: 0.2;
+    }
+    &__list-item:nth-child(2) {
+        margin-left: 9px;
+        align-items: center;
+    }
+    &__logo-img {
+        margin-top: 10px;
+        z-index: 2;
+        @media (max-width:768px) {
+            margin-left: 10px;
+        }
+        @media (max-width:375px) {
+            margin-left: 7px;
+          }
+    }
+    
+    &__logo-img:hover {
+        opacity: 0.3;
+    }
+
+    &__logo-img:active {
+        opacity: 0.2;
+    }
+    &__contact-img {
+        margin-right: 2px;
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+    &__contact-img:hover {
+        opacity: 0.3;
+    }
+    &__contact-img:active {
+        opacity: 0.2;
+    }   
+}
+
+// Всплывающий бургер
+
+.wrapper__menu {
+    margin: 200px auto;
+    width: 300px;
+    background-color: #FFFFFF;
+    position: relative;
+    color: #1E0606;
+    text-align: center;
+    height: 40px;
+    font-family: $font-opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: none;
+    @media (max-width:768px) {
+        display: block;
+        margin-left: 1px;
+        margin-top: 240px;
+        position: absolute;
+        width: 779px;
+    }
+    @media (max-width:768px) and (max-width:761px) {
+        max-width: 761px;
+    }
+    @media (max-width:768px) and (max-width:743px) {
+        max-width: 743px;
+    }
+    @media (max-width:768px) and (max-width:725px) {
+        max-width: 725px;
+    }
+    @media (max-width:768px) and (max-width:705px) {
+        max-width: 705px;
+    }
+    @media (max-width:768px) and (max-width:689px) {
+        max-width: 689px;
+    }
+    @media (max-width:768px) and (max-width:675px) {
+        max-width: 675px;
+    }
+    @media (max-width:768px) and (max-width:657px) {
+        max-width: 657px;
+    }
+    @media (max-width:768px) and (max-width:641px) {
+        max-width: 641px;
+    }
+    @media (max-width:768px) and (max-width:625px) {
+        max-width: 625px;
+    }
+    @media (max-width:768px) and (max-width:609px) {
+        max-width: 609px;
+    }
+    @media (max-width:768px) and (max-width:591px) {
+        max-width: 591px;
+    }
+    @media (max-width:768px) and (max-width:573px) {
+        max-width: 573px;
+    }
+    @media (max-width:768px) and (max-width:555px) {
+        max-width: 555px;
+    }
+    @media (max-width:768px) and (max-width:537px) {
+        max-width: 537px;
+    }
+    @media (max-width:768px) and (max-width:523px) {
+        max-width: 523px;
+    }
+    @media (max-width:768px) and (max-width:507px) {
+        max-width: 507px;
+    }
+    @media (max-width:768px) and (max-width:491px) {
+        max-width: 491px;
+    }
+    @media (max-width:768px) and (max-width:473px) {
+        max-width: 473px;
+    }
+    @media (max-width:768px) and (max-width:453px) {
+        max-width: 453px;
+    }
+    @media (max-width:768px) and (max-width:433px) {
+        max-width: 433px;
+    }
+    @media (max-width:768px) and (max-width:415px) {
+        max-width: 415px;
+    }
+    @media (max-width:768px) and (max-width:395px) {
+        max-width: 395px;
+    }
+    @media (max-width:768px) and (max-width:375px) {
+        max-width: 391px;
+    }
+
+    
+}
+
+.wrapper__checkmenu {
+    display: none;
+}
+.wrapper__checklabel {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    line-height: 40px;
+}
+.wrapper__burder-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #EEE4DB;
+    transition: .4s all;
+}
+.wrapper__burder-line:nth-of-type(2),
+.wrapper__burder-line:nth-of-type(3) {
+    top: 18px;
+}
+.wrapper__burder-line:nth-of-type(4) {
+    top: 28px;
+}
+.wrapper__main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: .4s all;
+    z-index: 20;
+}
+.wrapper__main-menu a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    color: #1E0606;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: 0.1px solid rgba(186, 142, 107, 0.3);
+    font-family: $font-opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.wrapper__main-menu a:hover {
+
+    background-color: #EEE4DB;
+}
+.wrapper__checkmenu:checked ~ .wrapper__main-menu {
+    max-height: 500px;
+    font-size: 16px;
+}
+.wrapper__checkmenu:checked ~ .wrapper__burder-line:nth-last-of-type(1),
+.wrapper__checkmenu:checked ~ .wrapper__burder-line:nth-last-of-type(4) {
+    display: none;
+}
+.wrapper__checkmenu:checked ~ .wrapper__burder-line:nth-last-of-type(2) {
+    transform: rotate(45deg);
+}
+.wrapper__checkmenu:checked ~ .wrapper__burder-line:nth-last-of-type(3) {
+    transform: rotate(-45deg);
+}
+.wrapper__menu-item:nth-child(7) {
+    color: #1E0606;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+.container__width {
+    width: 1400px;
+    left: 1918px;
+}
+
+
+

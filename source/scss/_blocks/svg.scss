@@ -1,0 +1,265 @@
+.pages__svg {
+    position: relative;
+    margin-top: -21px;
+    &-main {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #1E0606;
+        width: 360px;
+        height: 44px;
+        margin-top: 61px;
+        margin-bottom: 8px;
+    }
+    &-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &-item {
+        font-family: $font-crimsontext;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+        margin-right: 20px;
+    }
+    &-arrow {
+        margin-right: 20px;
+    }
+    &-item:hover {
+        opacity: 0.4;
+    }
+    &-item:active {
+        opacity: 0.5;
+    }
+
+}
+
+// картинки 
+.svg {
+    display: flex;
+    flex-direction: column;
+    margin-left: 363px;
+    margin-bottom: 60px;
+    overflow: hidden;
+
+    &__line {
+        animation: line 2s ease-in-out; 
+    }
+    &__rect {
+        animation: line-one 2s ease-in-out;    
+    }
+
+    &__rectone {
+        position: absolute;
+        left: 20%;
+        top: 32.3%;
+        animation: opacity 2s ease-in-out;  
+
+    }
+    &__lineblue {
+        position: absolute;
+        top: 36%;
+        left: 20.4%;
+        animation: line 1s ease-in-out;
+    }
+
+    &__linegreen {
+        position: absolute;
+        top: 42%;
+        left: 21.1%;
+        animation: line 1s ease-in-out;
+    }
+    &__linered-s {
+        position: absolute;
+        top: 47%;
+        left: 21.8%;
+        animation: line 1s ease-in-out;
+    }
+    &__linered-b {
+        position: absolute;
+        top: 47%;
+        left: 24.8%;
+        animation: line 1s ease-in-out;
+    }
+    &__lineyellow {
+        position: absolute;
+        top: 53%;
+        left: 22.6%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray {
+        position: absolute;
+        top: 58.4%;
+        left: 22.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-a {
+        position: absolute;
+        top: 64%;
+        left: 22.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-b {
+        position: absolute;
+        top: 64%;
+        left: 25.1%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegray-s {
+        position: absolute;
+        top: 69.8%;
+        left: 22.6%;
+        animation: line 2s ease-in-out;
+    }
+    &__lineyellow-a {
+        position: absolute;
+        top: 75%;
+        left: 22.5%;
+        animation: line 2s ease-in-out;
+    }
+    &__linered-d {
+        position: absolute;
+        top: 81%;
+        left: 21.9%;
+        animation: line 2s ease-in-out;
+    }
+    &__linegreen-two {
+        position: absolute;
+        top: 87%;
+        left: 21%; 
+        animation: line 2s ease-in-out;
+    }
+    &__lineblue-two {
+        position: absolute;
+        top: 92%;
+        left: 20.4%;
+        animation: line 2s ease-in-out;
+    }
+    &__linebeckground {
+        position: absolute;
+        left: 29.8%;
+        top: 32.3%;
+        animation: opacity 2s ease-in-out;  
+    }
+    &__backblue {
+        position: absolute;
+        left: 30%;
+        top: 36.1%;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__rock {
+        position: absolute;
+        left: 32.4%;
+        top: 45.6%;
+        z-index: 1;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__roc-t {
+        position: absolute;
+        left: 30.4%;
+        top: 49.8%;
+        z-index: 0;
+        animation: line-one 2s ease-in-out;  
+    }
+    &__backblue-t {
+        position: absolute;
+        left: 30.5%;
+        top: 65.4%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__rock-s {
+        position: absolute;
+        left: 32.9%;
+        top: 75%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__rock-j {
+        position: absolute;
+        left: 34.5%;
+        top: 72.3%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__sun {
+        position: absolute;
+        left: 31.7%;
+        top: 68.5%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__lineend-one {
+        position: absolute;
+        left: 30.5%;
+        top: 87%;
+        animation: line-one 2s ease-in-out; 
+    }
+    &__lineend-two {
+        position: absolute;
+        left: 30.5%;
+        top: 92%;
+        animation: line-one 2s ease-in-out; 
+    }
+    }
+    
+    @keyframes line {
+        0% {
+          left: 1px;
+          opacity: 0.3;  
+        }
+        30% {
+            opacity: 0.2; 
+          }
+        50% {
+            opacity: 0.4; 
+        }
+        70% {
+            opacity: 0.7; 
+        }
+        100% {
+            opacity: 1; 
+        }
+    }
+
+    @keyframes line-one {
+        0% {
+            top: 1px;
+            opacity: 0.3;  
+          }
+          30% {
+              opacity: 0.2; 
+            }
+          50% {
+              opacity: 0.4; 
+          }
+          70% {
+              opacity: 0.7; 
+          }
+          100% {
+              opacity: 1; 
+          }
+      }
+
+      @keyframes opacity {
+        0% {
+            opacity: 0.2;  
+          }
+          30% {
+              opacity: 0.3; 
+            }
+          50% {
+              opacity: 0.4; 
+          }
+          70% {
+              opacity: 0.7; 
+          }
+          100% {
+              opacity: 1; 
+          }
+      }
+
+      
+    

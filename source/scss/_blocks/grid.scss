@@ -1,0 +1,615 @@
+.grid {
+    &__main {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #1E0606;
+        width: 360px;
+        height: 44px;
+        margin-top: 61px;
+        margin-bottom: 8px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__item {
+        font-family: $font-crimsontext;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+        margin-right: 20px;
+    }
+    &__arrow {
+        margin-right: 20px;
+    }
+    &__item:hover {
+        opacity: 0.4;
+    }
+    &__item:active {
+        opacity: 0.5;
+    }
+}
+
+//  КАРТОЧКИ!!!!!!!!!
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 430px 430px 430px 215px;
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 278px 430px 430px 430px 350px 350px 215px;
+    }
+    @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 375px;
+    }
+    // 1 КАРТОЧКА
+    &__grid-box {
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        background: #FFFFFF;
+        grid-column: 1/3;
+        @media (max-width: 900px) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        max-width: 890px;
+        }
+        @media (max-width: 375px) {
+        max-width: 375px;
+        flex-wrap: wrap;
+        margin-top: -194px;
+        }
+    }
+    &__grid-img {
+        margin-top: auto;
+    }
+    
+
+    &__grid-name {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #BCBCBE;
+        max-width: 63px;
+        margin-bottom: 10px;
+        padding-top: 135px;
+}
+    &__grid-title {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #2C3036;
+        max-width: 220px;
+        margin-bottom: 20px;
+        @media (max-width: 375px) {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        max-width: 334px;
+    }
+}
+    &__grid-txt {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #BCBCBE;  
+        max-width: 220px;
+        padding-bottom: 136px;
+        @media (max-width: 375px) {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 258px;
+        margin-bottom: -107px;
+    }
+}
+    // 2 КАРТОЧКА 
+    &__grid-boxone {
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        background: #F7F8FA;
+        grid-column: 3/5;
+        @media (max-width: 900px) {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            max-width: 890px;
+        }
+        @media (max-width: 610px) {
+            max-height: 278px;
+        }
+    }
+    
+    &__grid-nameone {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;  
+        color: #BCBCBE;
+        max-width: 77px;
+        padding-top: 97px;
+        @media (max-width: 900px) {
+            padding-top: 51px;
+        }
+    }
+    
+    &__grid-titleone {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #2C3036;
+        max-width: 450px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @media (max-width: 900px) {
+            max-width: 663px;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 610px) {
+            max-width: 335px;
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+    
+    &__grid-txtone {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #2198F4;
+        max-width: 500px;
+        padding-bottom: 98px
+    }
+    
+    &__grid-textone {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width: 610px) {
+        }
+    }
+    //  3 КАРТОЧКА
+    &__grid-boxtwo {
+        max-width: 350px;
+        background: #EF5539;
+        width: 100%;
+        align-self: center;
+        height: 100%;
+        @media (max-width: 900px) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            max-width: 100%;
+        }
+        @media (max-width: 375px) {
+            grid-column: 1/3;
+        }
+    }
+    &__grid-nametwo {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 170px;
+        margin-bottom: 20px;
+    }
+    
+    &__grid-titletwo {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFC80A;
+        max-width: 45px;
+    }
+    &__grid-texttwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    //  4 КАРТОЧКА
+    &__grid-textthree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 375px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    
+    &__grid-namethree {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #BCBCBE;
+        max-width: 77px;
+        padding-top: 111px;
+        @media (max-width: 375px) {
+            margin-left: 20px;
+        }
+    }
+    &__grid-titlethree {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #2C3036;
+        max-width: 170px;
+        padding-top: 10px;
+        padding-bottom: 53px;
+        @media (max-width: 375px) {
+            margin-left: 20px;
+        }
+    }
+    &__grid-boxthree {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        grid-column: 2/4;
+        @media (max-width: 900px) {
+            grid-column: 1/3;
+            grid-row: 4/5;
+            gap: 35px;
+        }
+        @media (max-width: 375px) {
+            grid-row: 5/6;
+            flex-direction: column; 
+            gap: 0;
+            margin-top: -69px;
+        }
+    }
+    &__grid-txtthree {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #BCBCBE;
+        max-width: 230px;
+        padding-bottom: 20px;
+        padding-top: 108px;
+        @media (max-width: 375px) {
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 335px;
+        }
+    }
+    
+    &__grid-txthree {
+        max-width: 114px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #2198F4;
+        cursor: pointer;
+    }
+    &__grid-flex {
+        @media (max-width: 375px) {
+            margin-top: -80px;
+            margin-left: 10px;
+        }
+    }
+    // 5 КАРТОЧКА
+    &__grid-boxfour {
+        background: #8F75BC;
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-column: 4;
+        grid-row: 2/4;
+        @media (max-width: 900px) {
+            grid-column: 2/3;
+            grid-row: 5/7;
+        }
+        @media (max-width: 375px) {
+            grid-row: 8/9;
+            grid-column: 1/3;
+        }
+    }
+    &__grid-imgfour {
+        margin-top: 15px;
+        margin-bottom: 13px;
+    }
+    &__grid-flexfour {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__grid-namefour {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+        padding: 5px 15px;
+        background: #8972B6;
+        border-radius: 15px;
+    }
+    
+    &__grid-titlefour {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+    
+    &__grid-txfour {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    &__grid-txtfour {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 240px;
+        margin-bottom: 30px;
+        @media (max-width: 375px) {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            max-width: 230px;
+        }
+    }
+    
+    &__grid-btnfour {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #2C3036;
+        background: #FFC80C;
+        border-radius: 27px;
+        padding: 19px 41px;
+        margin: 0 auto;
+        display: inherit;
+        @media (max-width: 375px) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__grid-elipse {
+        width: 300px;
+        height: 300px;
+        background: #8066B0;
+        border-radius: 50%;
+    }
+    
+    &__fourflex-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        height: 100%;
+        background-color: #8066B0;
+        border-radius: 50%;
+        @media (max-width: 375px) {
+            margin-top: 30px;
+        }
+    }
+    // 6 КАРТОЧКА
+    &__grid-boxfive {
+        background: #93B7B7;
+        grid-column: 1/3;
+        @media (max-width: 900px) {
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        @media (max-width: 375px) {
+            grid-row: 6/7;
+            grid-column: 1/3;
+        }
+    }
+    
+    &__grid-namefive {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        color: #FFFFFF;
+        display: inline-flex;
+        justify-content: start;
+        background: #FA684F;
+        border-radius: 3px;
+        padding: 3px 5px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+    
+    &__grid-titlefive {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 200px;
+    }
+    
+    &__grid-imgfive {
+        margin-top: 17px;
+        @media (max-width: 900px) {
+            max-height: 151px;
+            margin-top: 60px;
+        }
+        
+    }
+    &__fiveflex-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+    }
+    // 7 КАРТОЧКА
+    &__grid-boxsix {
+        background: #F7F8FA;
+        @media (max-width: 900px) {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        @media (max-width: 375px) {
+            grid-column: 1/3;
+            grid-row: 4/5;
+            max-height: 309px;  
+        }
+    }
+    
+    &__grid-textsix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 96px;
+        @media (max-width: 375px) {
+            margin-top: 45px;
+        }
+    }
+    
+    &__grid-namesix {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #2C3036;
+        margin-bottom: 20px;
+    }
+    &__grid-titlesix {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #2198F4;
+    }
+    // 8 КАРТОЧКА
+    &__grid-boxseven {
+        background-color: #FFFF;
+        @media (max-width: 375px) {
+            grid-row: 7/8;
+        }
+    }
+    
+    &__grid-textseven {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 57px;
+    }
+    
+    &__grid-titleseven {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #2C3036;
+        margin-top: 15px;
+        @media (max-width: 375px) {
+            margin-top: 15px;
+            margin-bottom: 43px;
+        }
+    }
+        // 9 КАРТОЧКА
+    &__grid-boxeight {
+        background: #2C2C2C;
+        grid-column: 2/5;
+        @media (max-width: 900px) {
+            grid-column: 1/3;
+            grid-row: 7/8;
+        }
+        @media (max-width: 375px) {
+            flex-direction: column;
+            grid-row: 9/10;
+        }
+        }
+        &__grid-texteight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            @media (max-width: 375px) {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+        }
+        &__grid-titleeight {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+            max-width: 189px;
+            @media (max-width: 375px) {
+                text-align: center;
+            }
+        }
+        
+        &__grid-imgeight {
+            @media (max-width: 375px) {
+                margin-left: -108px;
+                margin-bottom: -30px;
+            }
+        }
+}
